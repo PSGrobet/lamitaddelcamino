@@ -1,0 +1,319 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #38628d;
+}
+
+body {
+    background-color: #e4e4e4;
+    font-family: 'Gotu', sans-serif;
+    color: #505050;
+}
+
+h1, h2, h3 {
+    font-family: "Tangerine", cursive;
+}
+
+.top {
+    background-color: #505050;
+    color: rgb(240, 240, 240);
+    height: 90px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.logo {
+    display:flex;
+    margin: 5px;
+    max-width: 80px;
+    margin-left: 10px;
+    align-items: center;
+}
+
+.logo img{
+    width: 100%;
+    
+}
+
+.top .titulo {    
+    margin: 20px auto 10px 5%;
+
+}
+
+.titulo h1 {
+    font-family: 'Tangerine', cursive;
+    font-size: 4em;
+    letter-spacing: 5px;
+}
+
+nav {
+    background-color: #505050;
+    display: flex;
+}
+
+nav ul {    
+    width: 100%;
+    display: flex;
+}
+
+nav li {
+    display: flex;
+    justify-content: center;
+    flex: 1 1 auto;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(240, 240, 240);
+    font-size: 17px;
+    padding: 5px auto;
+    text-align: center;
+    letter-spacing: 3px;
+    flex: auto;
+}
+
+nav a:hover{
+    background-color: darkgray;
+}
+
+main {
+    width: 70%;
+    margin: auto;
+    max-width: 1024px;
+}
+
+main h2 {
+    text-align: center;
+    margin: 20px auto;
+    font-size: 3em;
+    line-height: 120%;
+}
+
+main p {
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+main h3 {
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+}
+
+.intro {
+    text-align: center;
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+.article-img {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.img-parrafo {
+    float:left; 
+    margin-right: 20px; 
+    width:40%
+}
+
+.article-img img {
+    width: 100%;
+}
+
+.article-img figcaption {
+    font-size: small;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+table th {
+    background-color: #bebebe;
+    text-align: left;
+}
+
+table th, td {
+    padding: 0 5px;
+}
+
+nav li {
+    margin-bottom: 0;
+    font-style: normal;
+}
+
+main ol, ul {
+    margin-left: 20px;
+    font-size: inherit;
+    font-style: italic;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+h3.inline {
+    display: inline-block;
+}
+
+table + p {
+    font-style: italic;
+}
+
+table td:first-of-type {font-weight: bold;}
+table tr:nth-of-type(2n+1) {background-color: #bebebe;}
+
+.dropdown {
+    display: block;
+    position: relative;
+    text-align: center;
+}
+.dropdown:hover {
+    background-color: darkgray;
+}
+.dropdown-links {
+    display: none;
+    position: absolute;
+    background-color: #e4e4e4;
+    
+    width: 100%;
+    box-shadow: 0 8px 8px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+    transition: 2s; 
+}
+.dropdown-links a {
+    text-align: right;
+    color: initial;
+    padding: 10px 5px;
+    display: block;
+}
+.dropdown:hover .dropdown-links {
+    display: block;
+}
+.dropdown-links a:hover {
+    background-color: darkgray;
+}
+
+.video {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+article {
+    margin: 20px 0;
+}
+
+.resena {
+    display: flex;
+    
+}
+
+article img {
+    flex: auto;
+}
+
+.resena p {
+    flex: auto;
+}
+
+.video iframe {
+    width: 560px;
+    height: 315px;
+}
+
+footer p {
+    padding: 20px;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+@media only screen and (max-width: 480px) {
+
+    .top {
+        background-color: #505050;
+        color: rgb(240, 240, 240);
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        overflow: visible;
+    }
+
+    .top .titulo {
+        margin: 0 auto;
+    }
+
+    .logo {
+        max-width: 160px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+    
+    main {
+        width: 90%;
+        margin: auto;
+    }
+
+    .img-parrafo {
+        display: block;
+        float: none;
+        width: 90%;
+        margin:0 auto 10px auto;
+    }
+
+    .resena {
+        flex-wrap: wrap;
+    }
+
+    .video iframe {
+        width: 300px;
+        height: 168px;
+    }
+
+    .dropdown:hover .dropdown-links {
+        display: none;
+    }
+}
+
+@media only screen and (orientation: landscape) {
+    .top {
+        background-color: #505050;
+        color: rgb(240, 240, 240);
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+        overflow: visible;
+    }
+
+    .logo {
+        max-width: 160px;
+    }
+
+    main {
+        width: 90%;
+        margin: auto;
+    }
+}

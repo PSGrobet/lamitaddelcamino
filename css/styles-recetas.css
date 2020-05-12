@@ -1,0 +1,132 @@
+.recetario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.hero-text {
+    
+    border: 1px solid #505050;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;    
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+    display: none;
+}
+
+.hero-text h3 {
+    width: 100%;
+    color: white;
+    font-size: 3em;
+    font-family: 'Tangerine', cursive;
+    align-self: center;
+}
+.hero-img-campesino {
+    background-image: url("/imagenes/campesino720x360.png");
+    width: 600px;
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-img-campesino:hover .hero-text {
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
+        url("/imagenes/campesino720x360.png");
+    display: flex;
+}
+
+.hero-img-semillas {
+    background-image: url("/imagenes/semillas720x360.png");
+    width: 600px;
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-img-semillas:hover .hero-text {
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
+        url("/imagenes/semillas720x360.png");
+    display: flex;
+}
+
+.hero-img-mantequilla {
+    background-image: url("/imagenes/mantequilla720x360.png");
+    width: 600px;
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-img-mantequilla:hover .hero-text {
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
+        url("/imagenes/mantequilla720x360.png");
+    display: flex;
+}
+
+@media only screen and (max-width: 480px) {
+    .hero-text {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;    
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        justify-self: center;
+        align-self: center;
+        display: flex;
+        border: none;
+    }
+    .hero-img-campesino {
+        background-image: url("/imagenes/campesino320x160.png");
+        width: 320px;
+        height: 160px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .hero-img-semillas {
+        background-image: url("/imagenes/semillas320x160.png");
+        width: 320px;
+        height: 160px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .hero-img-mantequilla {
+        background-image: url("/imagenes/mantequilla320x160.png");
+        width: 320px;
+        height: 160px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
