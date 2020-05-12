@@ -59,6 +59,9 @@ nav {
 nav ul {    
     width: 100%;
     display: flex;
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
 }
 
 nav li {
@@ -164,7 +167,7 @@ li {
 }
 
 h3.inline {
-    display: inline-block;
+    display: inline;
 }
 
 table + p {
@@ -261,6 +264,13 @@ footer p {
         max-width: 160px;
     }
 
+    .titulo h1 {
+        font-family: 'Tangerine', cursive;
+        font-size: 4em;
+        letter-spacing: 2px;
+        margin: 0 10px;
+    }
+
     nav ul {
         flex-wrap: wrap;
     }
@@ -279,7 +289,7 @@ footer p {
         display: block;
         float: none;
         width: 90%;
-        margin:0 auto 10px auto;
+        margin: 0 auto 10px auto;
     }
 
     .resena {
@@ -292,6 +302,10 @@ footer p {
     }
 
     .dropdown:hover .dropdown-links {
+        display: none;
+    }
+
+    .icono-menu {
         display: none;
     }
 }
@@ -315,5 +329,9 @@ footer p {
     main {
         width: 90%;
         margin: auto;
+    }
+
+    .dropdown:hover .dropdown-links {
+        display: none;
     }
 }
