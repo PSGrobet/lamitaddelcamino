@@ -189,12 +189,10 @@ table tr:nth-of-type(2n+1) {background-color: #bebebe;}
     display: none;
     position: absolute;
     background-color: #e4e4e4;
-    
     width: 100%;
     box-shadow: 0 8px 8px 0 rgba(0,0,0,0.2);
-    z-index: 1;
-    transition: 2s; 
 }
+
 .dropdown-links a {
     text-align: right;
     color: initial;
@@ -204,6 +202,7 @@ table tr:nth-of-type(2n+1) {background-color: #bebebe;}
 .dropdown:hover .dropdown-links {
     display: block;
 }
+
 .dropdown-links a:hover {
     background-color: darkgray;
 }
@@ -310,7 +309,7 @@ footer p {
     }
 }
 
-@media only screen and (orientation: landscape) {
+@media only screen and (orientation: landscape) and (max-width: 960px) {
     .top {
         background-color: #505050;
         color: rgb(240, 240, 240);
