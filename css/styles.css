@@ -79,6 +79,7 @@ nav a {
     text-align: center;
     letter-spacing: 3px;
     flex: auto;
+    transition: all 0.2s ease-in-out;
 }
 
 nav a:hover{
@@ -186,11 +187,13 @@ table tr:nth-of-type(2n+1) {background-color: #bebebe;}
     background-color: darkgray;
 }
 .dropdown-links {
-    display: none;
+    max-height: 0;
+    overflow:hidden;
     position: absolute;
     background-color: #e4e4e4;
     width: 100%;
     box-shadow: 0 8px 8px 0 rgba(0,0,0,0.2);
+    
 }
 
 .dropdown-links a {
@@ -198,9 +201,10 @@ table tr:nth-of-type(2n+1) {background-color: #bebebe;}
     color: initial;
     padding: 10px 5px;
     display: block;
+    transition: all .5s ease-out;
 }
 .dropdown:hover .dropdown-links {
-    display: block;
+    max-height: none;
 }
 
 .dropdown-links a:hover {
